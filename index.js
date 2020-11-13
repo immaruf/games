@@ -6,7 +6,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 
     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
 
-        var buttonInnerHtml = this.innerHTML;
+        var buttonInnerHtml = this.innerHTML.toLowerCase();
 
         makeSound(buttonInnerHtml);
 
@@ -28,7 +28,7 @@ function makeSound(key) {
 
     switch (key) {
 
-        case "w":
+        case "m":
             var tom1 = new Audio("sounds/tom-1.mp3");
             tom1.play();
 
@@ -44,23 +44,38 @@ function makeSound(key) {
             tom3.play();
             break;
 
-        case "d":
-            var tom4 = new Audio("sounds/tom-4.mp3");
+        case "r":
+            var tom4 = new Audio("sounds/ride.wav");
             tom4.play();
             break;
 
-        case "j":
+        case "n":
             var snare = new Audio("sounds/snare.mp3");
             snare.play();
             break;
 
-        case "k":
+        case "t":
             var crash = new Audio("sounds/crash.mp3");
             crash.play();
             break;
 
-        case "l":
-            var kick = new Audio("sounds/kick-bass.mp3");
+        case "e":
+            var kick = new Audio("sounds/tink.wav");
+            kick.play();
+            break;
+
+        case "f":
+            var kick = new Audio("sounds/clap.wav");
+            kick.play();
+            break;
+
+        case "o":
+            var kick = new Audio("sounds/openhat.wav");
+            kick.play();
+            break;
+
+        case "p":
+            var kick = new Audio("sounds/tom-4.mp3");
             kick.play();
             break;
 
@@ -69,6 +84,7 @@ function makeSound(key) {
     }
 }
 
+//animate button after press
 function buttonAnimation(currentKey) {
     var activeButton = document.querySelector("." + currentKey);
 
