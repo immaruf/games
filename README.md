@@ -2,6 +2,11 @@
 ### In this repositoriy I merged my existing repositories using git subtree merge technique.
 ##### This repository contains my three javascript game.
 
-[DrumKit Game][https://immaruf.github.io/DrumKit/]<br>
-[Dice Game][https://immaruf.github.io/DiceGame/]<br>
-[Simon Game][https://immaruf.github.io/SimonGame/]<br>
+[DrumKit Game][DrumKit]<br>
+[Dice Game][Dice]<br>
+[Simon Game][Simon]<br>
+
+
+[DrumKit]: https://immaruf.github.io/DrumKit/
+[Dice]: https://immaruf.github.io/DiceGame/
+[Simon]: https://immaruf.github.io/SimonGame/
